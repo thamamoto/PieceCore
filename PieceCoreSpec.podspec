@@ -15,20 +15,20 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "PieceCoreSpec"
+  s.name         = "PieceCore"
   s.version      = "0.0.1"
-  s.summary      = "A short description of PieceCoreSpec."
+  s.summary      = "PieceCorera Library"
 
-  s.description  = <<-DESC
-                   A longer description of PieceCoreSpec in Markdown format.
+  #s.description  = <<-DESC
+  #                A longer description of PieceCoreSpec in Markdown format.
+  #
+  #                   * Think: Why did you write this? What is the focus? What does it do?
+  #                   * CocoaPods will be using this to generate tags, and improve search results.
+  #                 * Try to keep it short, snappy and to the point.
+  #                   * Finally, don't worry about the indent, CocoaPods strips it!
+  #                   DESC
 
-                   * Think: Why did you write this? What is the focus? What does it do?
-                   * CocoaPods will be using this to generate tags, and improve search results.
-                   * Try to keep it short, snappy and to the point.
-                   * Finally, don't worry about the indent, CocoaPods strips it!
-                   DESC
-
-  s.homepage     = "http://EXAMPLE/PieceCoreSpec"
+  s.homepage     = "http://jokapi.jp"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -78,8 +78,8 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/thamamoto/PieceCore", :tag => "0.0.1" }
-
+  s.source       = { :git => "https://github.com/thamamoto/PieceCore.git", :tag => "0.0.1" }
+  s.source_files          = "PieceCore/**/*.{h,m}"
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -132,5 +132,5 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
-
+  s.dependency            "AFNetworking", "~> 2.4.0"
 end
