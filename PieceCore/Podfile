@@ -1,0 +1,6 @@
+platform:ios, 7.0
+pod 'SDWebImage'
+pod 'SVProgressHUD'
+pod 'AFNetworking'
+pod 'Reachability'
+pod 'UIColor+MLPFlatColors'
