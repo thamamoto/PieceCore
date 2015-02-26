@@ -7,6 +7,7 @@
 //
 
 #import "BaseViewController.h"
+#import "CoreDelegate.h"
 
 @interface BaseViewController ()
 
@@ -96,7 +97,7 @@
 }
 
 -(void)receiveError:(NSError *)error sendId:(NSString *)sendId{
-    AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    CoreDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
     if (!appDelegate.isUpdate) {
         NSString *errMsg;
         switch (error.code) {

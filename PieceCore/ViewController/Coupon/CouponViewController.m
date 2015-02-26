@@ -104,7 +104,7 @@
     int currentPage = 0;
     // スクロールビューにラベルを貼付ける
     for (CouponData *model in self.data.list) {
-        if (self.couponId.length > 0
+        if ([Common isNotEmptyString:self.couponId]
             && [self.couponId isEqualToString:model.coupon_code]){
             currentPage = i;
         }
