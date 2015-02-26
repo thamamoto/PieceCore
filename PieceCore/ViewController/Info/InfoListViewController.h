@@ -11,7 +11,6 @@
 #import "CouponViewController.h"
 #import "FlyerViewController.h"
 #import "NewsViewController.h"
-#import "AppDelegate.h"
 
 
 

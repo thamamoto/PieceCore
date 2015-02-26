@@ -378,9 +378,8 @@
     
     NSString *latestVersion = [results objectForKey:@"version"];
     NSString *currentVersion = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
-    NSComparisonResult versionResult = [latestVersion compare:currentVersion options:NSNumericSearch];
     
-    if (versionResult == NSOrderedDescending) {
+    if (![currentVersion isEqualToString:latestVersion]) {
         self.isUpdate = YES;
         
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"お知らせ"

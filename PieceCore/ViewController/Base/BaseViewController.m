@@ -97,8 +97,8 @@
 }
 
 -(void)receiveError:(NSError *)error sendId:(NSString *)sendId{
-    CoreDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
-    if (!appDelegate.isUpdate) {
+    CoreDelegate *delegate = [[UIApplication sharedApplication] delegate];
+    if (!delegate.isUpdate) {
         NSString *errMsg;
         switch (error.code) {
             case NSURLErrorBadServerResponse:

@@ -98,19 +98,7 @@
     return [NSKeyedUnarchiver unarchiveObjectWithData:data];
 }
 +(void)saveSettingModel:(SettingData*)settingModel {
-    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:settingModel];
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
     [ud synchronize];
-}
-+(bool)isNotEmptyString:(NSString *)string{
-    if ([string isEqual:[NSNull null]]) {
-        return NO;
-    } else if (string == nil){
-        return NO;
-    } else if (string.length == 0) {
-        return NO;
-    } else {
-        return YES;
-    }
 }
 @end

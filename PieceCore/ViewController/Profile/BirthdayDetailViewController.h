@@ -12,7 +12,7 @@
 #import "SettingData.h"
 #import "KinenbiData.h"
 
-@interface BirthdayDetailViewController : BaseViewController
+@interface BirthdayDetailViewController : BaseViewController<UITextFieldDelegate>
 
 @property (nonatomic,strong) SettingData * setting;
 @property (weak, nonatomic) IBOutlet UITextField *barthdaySyuruiTf;
