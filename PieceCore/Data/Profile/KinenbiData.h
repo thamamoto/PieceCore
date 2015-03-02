@@ -10,5 +10,5 @@
 @property (strong, nonatomic) NSString *name;
 @property (strong, nonatomic) NSString *syubetu;
 @property (strong, nonatomic) NSString *date;
--(NSString *)getStrDate;
+//-(NSString *)getStrDate;
 @end

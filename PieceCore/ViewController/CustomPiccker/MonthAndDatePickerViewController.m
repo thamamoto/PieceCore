@@ -66,8 +66,8 @@
 }
 
 - (IBAction)doneAction:(id)sender {
-    int month = [self.pickerView selectedRowInComponent:0];
-    int day = [self.pickerView selectedRowInComponent:1];
+    int month = (int)[self.pickerView selectedRowInComponent:0];
+    int day = (int)[self.pickerView selectedRowInComponent:1];
     
     [self.delegate didCommitButtonClicked:self selectDate:[NSString stringWithFormat:@"%d月%d日",month + 1,day + 1]];
 

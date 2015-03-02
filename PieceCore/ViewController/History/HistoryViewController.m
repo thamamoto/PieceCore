@@ -128,7 +128,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
-        self.selectRow = indexPath.row;
+        self.selectRow = (int)indexPath.row;
         HistoryItemData *model = [self.data.historyItemList objectAtIndex:self.selectRow];
         
         DeliberyStatusViewController *vc = [[DeliberyStatusViewController alloc] initWithNibName:@"DeliberyStatusViewController" bundle:nil];

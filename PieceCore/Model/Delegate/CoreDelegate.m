@@ -52,6 +52,7 @@
     if ([currentVersion compare:@"8.0" options:NSNumericSearch] == NSOrderedAscending){
         // i0S7以前の処理
         // デバイストークン取得申請
+        #pragma GCC diagnostic ignored "-Wdeprecated-declarations"
         [[UIApplication sharedApplication] registerForRemoteNotificationTypes: (UIRemoteNotificationTypeBadge|
                                                                                 UIRemoteNotificationTypeSound|
                                                                                 UIRemoteNotificationTypeAlert)];

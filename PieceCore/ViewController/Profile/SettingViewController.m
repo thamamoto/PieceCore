@@ -86,7 +86,7 @@
             if (self.setting.birthdayList.count == 0) {
                 selectName = @"未設定";
             } else {
-                selectName = [NSString stringWithFormat:@"%d件設定",self.setting.birthdayList.count ];
+                selectName = [NSString stringWithFormat:@"%d件設定",(int)self.setting.birthdayList.count ];
             }
             
             break;
@@ -97,7 +97,7 @@
             if (self.setting.kinenbiList.count == 0) {
                 selectName = @"未設定";
             } else {
-                selectName = [NSString stringWithFormat:@"%d件設定",self.setting.kinenbiList.count ];
+                selectName = [NSString stringWithFormat:@"%d件設定",(int)self.setting.kinenbiList.count ];
             }
             
             break;

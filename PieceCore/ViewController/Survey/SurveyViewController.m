@@ -93,7 +93,7 @@
         self.titleLbl.text = @"ありがとうございました！";
         self.descriptionLbl.text = @"今後のサービス向上のため、\nお客様の回答を参考にさせて頂きます。";
         self.questionLbl.text = @"";
-        NSTimer *tm =[NSTimer scheduledTimerWithTimeInterval:3.5f target:self selector:@selector(close:) userInfo:nil repeats:NO];
+        [NSTimer scheduledTimerWithTimeInterval:3.5f target:self selector:@selector(close:) userInfo:nil repeats:NO];
     }
 }
 
